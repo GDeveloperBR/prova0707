@@ -1,0 +1,41 @@
+var veiculo = prompt("Digite o tipo de veículo:\n 1 - Carro\n 2 - Moto\n 3 - Caminhão\n 4 - Ônibus");	
+var option;
+switch(veiculo){
+    case "1":  
+        option = prompt("Qual tipo de CARRO você precisa?\n1 - Hatch\n2 - Sedan\n3 - SUV"); 
+        switch(option){
+            case "1": document.write("Parabéns pela compra do seu carro Hatch"); break;
+            case "2": document.write("Parabéns pela compra do seu carro Sedan"); break;
+            case "3": document.write("Parabéns pela compra do seu carro SUV"); break;
+            default: document.write("Carro não encontrado");
+        }
+        break;
+    case "2": 
+        option = prompt("Qual tipo de MOTO você precisa?\n 1 - Naked\n2 - Esportiva\n3 - Cargo");
+        switch(option){
+            case "1": document.write("Parabéns pela compra da sua moto Naked"); break;
+            case "2": document.write("Parabéns pela compra da sua moto Esportiva"); break;
+            case "3": document.write("Parabéns pela compra da sua moto Cargo"); break;
+            default: document.write("Moto não encontrada");
+        }
+        break;
+    case "3": 
+        option = prompt("Qual tipo de CAMINHÃO você precisa?\n 1 - Carreta\n2 - Caçamba\n3 - Lixeiro"); 
+        switch(option){
+            case "1": document.write("Parabéns pela compra do seu caminhão Carreta"); break;
+            case "2": document.write("Parabéns pela compra do seu caminhão Caçamba"); break;
+            case "3": document.write("Parabéns pela compra do seu caminhão Lixeiro"); break;
+            default: document.write("Caminhão não encontrado");
+        }
+        break;
+    case "4": 
+        option = prompt("Qual tipo de ÔNIBUS você precisa?\n 1 - Executivo\n2 - Microônibus\n3 - Ônibus comum"); 
+        switch(option){
+            case "1": document.write("Parabéns pela compra do seu ônibus executivo"); break;
+            case "2": document.write("Parabéns pela compra do seu ônibus microônibus"); break;
+            case "3": document.write("Parabéns pela compra do seu ônibus ônibus comum"); break;
+            default: document.write("Ônibus não encontrado");
+        }
+        break;
+    default: alert("Veículo não encontrado");
+}
