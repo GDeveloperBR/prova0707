@@ -1,0 +1,10 @@
+var bebida = prompt("Bebidas disponíveis:\n 1 - Água\n 2- Refrigerante\n 3 - Cerveja\n 4 - Suco");
+
+switch(bebida){
+    case "1": document.write("O valor da água é de 5 reais"); break;
+    case "2": document.write("O valor do refrigerante é de 4 reais"); break;
+    case "3": document.write("O valor da cerveja é de 7 reais"); break;
+    case "4": document.write("O valor do suco é de 8 reais"); break;
+    default: document.write("Bebida não encontrada");
+}
+
